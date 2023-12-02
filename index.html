@@ -6,5 +6,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jb Portfolio</title>
 
-    
+    <Style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        .pic {
+            height: 300px;
+        }
+
+        main {
+            background-color: red;
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .project {
+            margin-bottom: 20px;
+           
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 20px 0;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+        }
+    </Style>
 </head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Jb Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="navigateTo('home')">HOME</a></li>
+                    <li><a href="#" onclick="navigateTo('about')">ABOUT</a></li>
+                    <li><a href="#" onclick="navigateTo('projects')">PROJECTS</a></li>
+                    <li><a href="#" onclick="navigateTo('repositories')">RESPOSITORYS</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+    <main id="home" class="container">
+        <h2>Welcome to My Portfolio</h2>
+        <p>"bahalag bilar basta kanunay "</p>
+        <img class="pic" src="icegif-822.gif" alt="">
+    </main>
+
+    
+    <main id="about" class="container" style="display: none;">
+        <h2 class="container">About Me</h2>
+        <br><br><br>
+        <img class="pic" src="psd.jpg" alt="">
+        <h5>Name: Beazel ray ayuno</h5>
+        <h5>HP: 2%</h5>
+        <h5>level 28</h5>
+        <br>
+        <h5>Race: pirate</h5>
+        <h5>Class: IT Student</h5>
+        <h5>Age: 20</h5>
+        <h5>GitHub Codename: <a href="https://github.com/Beazel17">PinkyBabe</a></h5>
+        <br>
+        <h3>Skills:</h3>
+        <br>
+        <h5>"Basket Ball"</5>
+        <h5>"Mobile legend"</h5>
+        <h5>"dota2"</h5>
+        <h5>"Programming"</h5>
+        <h5>"talking"</h5>
+    </main>
+
+    <main id="projects" class="container" style="display: none;">
+        <h2>Projects</h2>
+        <br><br>
+       
+function navigateTo(page) {
+   
+    const contentSections = document.querySelectorAll('main');
+    contentSections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+ 
+    const selectedSection = document.getElementById(page);
+    selectedSection.style.display = 'block';
+}
+
+navigateTo('home');
+
+
+
+
+<div class="project">
+             
+        <div class="project">
+            <h3><a href=https://github.com/Beazel17/beazel>beazel</a></h3>
+        </div>
+       
+    </main>
+    <main id="repositories" class="container">
+        <div class="container">
+        <h2>Repositories</h2>
+        </div>
+
+        <br><br>
+        
+        <div class="project">
+            <h3><a href="https://github.com/hexedhorizon/it24-main">it24-main</a></h3>
+        </div>
+        <main id="repositories" class="container">
+            <div class="container">
+            <h2>Repositories</h2>
+            </div>
+    
+            <br><br>
+            
+            <div class="project">
+                <h3><a href="https://github.com/hexedhorizon/it24-main">it24-main</a></h3>
+            </div>
+          
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
